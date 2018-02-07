@@ -1,0 +1,9 @@
+
+.blogholder {
+	display: inline-block !important;
+	position: relative;
+	width: 52em;}
+
+img {
+	margin-bottom: 1em;
+}
