@@ -6,4 +6,6 @@
 
 img {
 	margin-bottom: 1em;
+	box-shadow: lightgrey 0.25em 0.25em 0.5em;
+	border: 1px solid #c7c7c7;
 }
