@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-	<title>Trust and older content on Canada.ca
+	<title>Dates matter: Trust and older content on Canada.ca
 </title>
-	<meta property="dcterms.title" content="How people perceive older content on Canada.ca"/>
+	<meta property="dcterms.title" content="Dates matter: Trust and older content on Canada.ca"/>
 	<meta property="dcterms:issued" title="W3CDTF" content="2018-02-22"/>
 	<meta property="dcterms.modified" title="W3CDTF" content="2018-02-22"/>
 
@@ -75,12 +75,15 @@ lang: en
 -->
 
 <div class="blogholder">
-<h1>Trust and older content on Canada.ca</h1>
-<!-- <p class="post-meta"><time datetime="2017-12-12T08:48:44+00:00" itemprop="datePublished">February 22, 2018</time></p> -->
+<h1>Dates matter: Trust and older content on Canada.ca</h1>
+<!-- <p class="post-meta"><time datetime="2018-03-28T08:48:44+00:00" itemprop="datePublished">March 28, 2018</time></p> -->
 
 
-<p>In a recent usability study, we saw people disregarding Canada.ca search results that seemed too old. However, the content was perfectly valid and had in fact just been reviewed. We can help show that content is still relevant by indicating when pages were last reviewed for accuracy. </p>
+<p>In a recent usability study, we saw people disregarding Canada.ca search results that seemed too old. They assumed that because the page had not been “modified” for some time that the information on that page could not be relied upon. However, the content was perfectly valid and had in fact just been reviewed.</p>
 
+<p>
+How can we can help show that content is still relevant? By indicating when pages were last reviewed for accuracy. 
+</p>
 <!-- <p>We had some interesting results related to content age in a recent usability study. It showed us about how people perceive content based on its age. This might influence how we present the date updated on Canada.ca.</p> -->
 
 <h2>You can see how old content is on Canada.ca</h2>
@@ -88,7 +91,7 @@ lang: en
 <img class="blog-screenshot" src="../../../../images/pagewithdate-small-en.jpg" alt="Screenshot of a blurred Canada.ca page showing the date modified near the bottom on the left side." />
 
 <p>(You'll see the date this post was published if you look near the bottom of this page.)</p>
-<p>Since it's in the same place on every Canada.ca web page, people can count on finding it if they want to know how current the information is.</p>
+<p>Since it's in the same place on every Canada.ca web page, people can count on finding the date if they want to know how current the information is.</p>
 
 <p>The second place people see the date is in search engine results. Both on Internet search engines:</p>
 
@@ -98,22 +101,21 @@ lang: en
 
 <img class="blog-screenshot" src="../../../../images/blog-date-canadadotca-serp.png" width="1024" alt="Canada.ca search results page for 'vaccines while pregnant' showing a result (Vaccinations and pregnancy) with June 20, 2015 highlighted">
 
-<p>In the design guidance for Canada.ca, we say that you should:</p>
+<h2>Why content age matters</h2>
 
-<p>"Use the date modified component to provide a person with the date that the content was last updated."</p>
+<p>When trying to accomplish a task, people really notice the age of the content presented. The more recent your content looks, the more credible it seems to people. Without this piece of information they may not be successful finding what they are looking for. 
+That’s why the design guidance for Canada.ca requires you to implement the “Date modified” component.</p>
 
 <ul><li> <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/headers-footers-navigation.html#toc3">Headers, footers and navigation for Canada.ca</a></li></ul>
 
-<p>But if there's no reason to update the content, that date won't change. It can start to look old even if it's still accurate.</p>
+<p>But for it to be useful for people, the component needs to be managed well. And that can be the difficult part. Often, if there's no reason to update the content, we don’t review it. Then the “Date modified” stays the same as the date published. </p>
 
-<h2>Why content age matters</h2>
+<p>Content can start to look old even if it's still accurate and relevant. This creates problems, especially with content that can appear out-of-date quickly. </p>
 
-<p>People really notice the age of the content presented, especially if it's a subject that can be out of date quickly. Health information definitely fits into that category. How recent the content is (also called it's "currency") is a key way people tell how credible it is.</p>
 
-<!-- <p>Here's a video of a usability test participant disregarding the best page to solve his task due to its age (voice disguised):</p> -->
 <h2>Watch people disregarding old content</h2>
 
-<p>In this video, Canadians are trying to see if pregnant women can get the flu shot (they can and should!). Here's what happens when they see that content is from more than 2 years ago:</p>
+<p>In this video, Canadians are trying to see if it's safe for pregnant women to get the flu shot (it is and they should!). Here's what happens when they see that content is from more than 2 years ago:</p>
 <figure class="wb-mltmd wb-init video cc_on">
 	<video poster="../../../../images/old-content-video-poster.jpg" title="Thinking information is out of date">
 		<source type="video/mp4" src="../../../../images/trust-of-old-content.mp4" />
@@ -152,17 +154,17 @@ lang: en
 
 <p>Even if the information is perfectly valid, people still thought there should be something newer.</p>
 
-<h2>Review content regularly to keep it up to date</h2>
+<h2>Review content regularly to confirm it’s up to date, not just when you change it</h2>
 
-<p>We should be review content regularly as part of our content management lifecycle. How often you review depends on the content. Medical and scientific information is clearly should be reviewed more frequently.</p>
+<p>Review your content regularly as part of your content management lifecycle. How often to review depends on the content. Make sure you understand the business lifecycle of the content and review as often as makes sense.</p>
 
-<p>It's entirely possible that a page you review may not need any updates. All of the information is still valid, and no changes are needed. It might then seem less trustworthy, even though the information is still as valid as when it was written.</p>
+<p>These tests have confirmed something we've had our eye on for a while. Currently, our guidance suggests only updating the “Date modified” component when making significant changes to content. We’ll be making changes to the guidance to reflect the need for a regular content review cycle that reaffirms content currency for people on Canada.ca.</p>
 
-<h2>If you reviewed the content and it's still valid, update the date modified</h2>
+<h2>If you reviewed the page and it's still valid, update its “Date modified” </h2>
 
-<p>If you've done a full review of the content and decided it's still valid, then you can update the date modified to the date of the review. The date issued remains the same, but this provides a signal that the content has been assessed and is still current.</p>
+<p>If you've done a full review of the content and decided it's still valid, then you can update the the “Date modified” component. The date issued remains the same, but this provides a signal that the content has been assessed and is still current.</p>
 
-<p>Don't update the date modified of pages just because you want to make them <strong>look</strong> new. Knowing the actual date something was modified or reviewed is important.  It should only be done as part of a content lifecycle review process that has actually determined that the content is still valid. </p>
+<p>It's very important not to update the “Date modified” component of pages without the proper review, just because you want to make them <strong>look</strong> new. Knowing the actual date something was modified or reviewed is important. It should only be done as part of a content lifecycle review process that has actually determined that the content is still valid. </p>
 
 <h2 id="we-want-to-hear-from-you">We want to hear from you</h2>
 
